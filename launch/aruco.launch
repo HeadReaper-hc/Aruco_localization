@@ -1,0 +1,11 @@
+<launch>
+    <rosparam file="$(find aruco_localization)/config/default.yaml" command="load" />
+
+    <node pkg="aruco_localization" type="aruco_node" name="aruco_localization" output="screen">
+    </node>
+
+    <node pkg="rviz" type="rviz" name="rviz" output="screen"
+          args="-d $(find aruco_localization)/rviz/aruco.rviz" required="true">
+    </node>
+
+</launch>
