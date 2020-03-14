@@ -144,7 +144,7 @@ namespace Aruco_LOCA{
                mbMapBuildFinish = true;
            }
        }
-       else{  /***** map built finished
+       else{  /***** map built finished ******/
            map<int, Matrix4d> currMeasure;
            for(int i=0;i<IDs.size();i++){
                currMeasure.insert(make_pair(IDs[i],Tca[i]));
